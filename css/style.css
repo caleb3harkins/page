@@ -1,0 +1,272 @@
+/*  This is a comment in CSS  */
+			body {
+				background-image: linear-gradient(to right, rgba(0,0,0, 0.4) 0 100%), url('../images/brick.png');
+				/*background: linear-gradient(red, orange);*/
+			}
+			h1 {
+				font-size: 48px;
+				text-decoration: underline;
+				font-family: papyrus;
+				font-weight: bold;
+				margin-left: 10px;
+			}
+			
+			h2 {
+				font-size: 36px;
+				text-decoration: underline;
+				font-family: garamond;
+				text-shadow: 0px 0px 3px black;
+			}
+		
+			li {
+				font-size: 16px;
+				font-weight: 800;
+			}
+						
+			.orange_text {
+				color: orange;
+				color: #FFCA00FF;
+				color: rgba(255, 125, 0, 100%);
+				color: hsla(30, 100%, 50%, 100%);
+			}
+			
+			/* This makes text have small caps */
+			.small_cap_letter {
+				font-variant: small-caps;
+			}
+			
+			.large_text {
+				font-size: 48px;
+			}
+			
+			.doc_header {
+				width: 80%;
+				/* line width, line type, color */
+				border: 5px solid black;
+				margin-bottom: 30px;
+				margin-left: auto;
+				margin-right: auto;
+				min-height: 100px;
+				border-radius: 15px;
+				background-color: #FFFFFFDD;
+			}
+			
+			.doc_body {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				color: crimson;
+				border: 5px solid crimson;
+				border-radius: 15px;
+				background-color: #FFFFFFCC;
+				/*background-color: crimson;*/
+			}
+			
+			.doc_body p, h2, img {
+				margin-left: 5px;
+			}
+			
+			.heavy_border {
+				/*border: 5px dashed orange;*/
+				
+				margin-right: 30px;
+			}
+			
+			.inner_picture {
+				border: 2px solid green;
+				width: 100px;
+			}
+			
+			.small_img {
+				max-width: 100px;
+			}
+			.x_small_img {
+				max-width: 25px;
+			}
+			.inner_video {
+				width: 300px;
+			}
+			
+			.float_L {
+				float: right;
+				margin-left: 5px;
+			}
+			
+			.flex_container {
+				display: flex;
+				background-color: #CCCCCCAA;
+				justify-content: center;
+				flex-direction: row;
+				border: 1px solid black;
+			}
+		
+			.flex_container div {
+				background-color: #DDDDDDAA;
+				background: linear-gradient(silver, white);
+				padding: 10px;
+				margin: 10px;
+				border: 1px solid black;
+				border-radius: 10px;
+			}
+			
+			.flex_container div:hover {
+				background: linear-gradient(white, silver);
+				border: 1px solid crimson;
+				border-radius: 0px;
+				
+			}
+			
+			/*
+				.flex_child {
+				background-color: #DDDDDD;
+				padding: 5px;
+				margin: 5px;
+				border: 1px solid black;
+			}
+			*/
+			table {
+				color: #000000;
+				border: 2px solid #000000;
+				padding: 5px;
+				margin: 15px;
+			}
+			tr {
+				border: 2px solid #000000;
+			}
+			td {
+				border: 2px dashed #000000;
+				background-color: #CDCDCD;
+				padding: 5px;
+				text-align: center;
+			}
+			th {
+				background-color: #999999;
+				border: 2px solid #000000;
+			}
+			.yellow {
+				background-color: yellow;
+			}
+			.red {
+				background-color: red;
+			}
+			
+			.rounded {
+				border: 5px dashed orange;
+				margin: 5px;
+				border-radius: 25px 0px 25px 0px;
+			}
+			
+			.ball {
+				background-color: crimson;
+				background: linear-gradient(#FF000066, orange);
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				border: 5px solid black;
+			}
+			
+			.hidden_menu {
+				display: none;
+				background-color: #CCCCCCDD;
+				border: 2px solid black;
+			}
+			
+			.ball:hover {
+				background: linear-gradient(orange, #FF000066); 
+				cursor: pointer;
+			}
+			
+			.ball:hover .hidden_menu {
+				display: block;
+			}
+			
+			.bg_image {
+				background-image: url('../images/brick.png');
+/*				background-repeat: repeat-y;*/
+			}
+			.rectangle {
+				width: 100px;
+				height: 50px;
+				border: 2px solid black;
+			}
+			input {
+				margin-top: 15px;
+				border-color: #000000;
+				color: crimson;
+			}
+			label {
+				margin-left: 15px;
+			}
+			.left_margin_space {
+				margin-left: 15px;
+			}
+			
+			a {
+				color: orange;
+				text-decoration: underline;
+				text-shadow: 0px 0px black;
+			}
+			
+			/*visited link*/
+			a:visited {
+				color: orange;
+			}
+			/*mouse/cursor hoverong over*/
+			a:hover {
+			/*	color: crimson;*/
+				text-decoration: none;
+			}
+			/*About to receive input*/
+			a:focus {
+				color: orange;
+			}
+			/*receiving input*/
+			a:active {
+				color: orange;
+			}/* Transition for the header background color */
+.doc_header {
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.5s ease, padding 0.5s ease;
+}
+
+.doc_header:hover {
+  background-color: White; /* Change to orange when hovered */
+  padding: 30px; /* Increase padding on hover */
+}
+
+/* Transition for navigation links */
+.flex_container a div {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flex_container a div:hover {
+  background-color: orange; /* Orange background on hover */
+  color: white; /* White text color on hover */
+}
+
+/* Animation for header text (h1) */
+@keyframes headerAnimation {
+  0% {
+    font-size: 30px;
+    background-color: red;
+  }
+  50% {
+    font-size: 40px;
+    background-color: orange; /* Orange background */
+  }
+  100% {
+    font-size: 30px;
+    background-color: red;
+  }
+}
+
+/* Applying the animation to the header text */
+.doc_header h1 {
+  animation: headerAnimation 3s infinite;
+}
